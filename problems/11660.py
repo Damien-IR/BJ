@@ -1,5 +1,5 @@
-from copy import deepcopy
 import sys
+from copy import deepcopy
 
 # 입력 속도 증가
 input = sys.stdin.readline

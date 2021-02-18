@@ -1,5 +1,4 @@
 from collections import deque
-from sys import stdin
 
 
 def solution(n, arr):
