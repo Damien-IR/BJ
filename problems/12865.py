@@ -17,8 +17,7 @@ def pack(count: int, cur_v: int, cache: list, arr: list):
     if cur_v >= arr[count][0]:
         # DP 값에 들기 전 DP 값과 든 후 재귀 실행 결과 값 비교하여 큰 값으로 저장
         cache[count][cur_v] = max(cache[count][cur_v],
-                                  pack(count=count + 1, cur_v=cur_v - arr[count][0], cache=cache, arr=arr) + arr[count][
-                                      1])
+                                  pack(count + 1, cur_v - arr[count][0], cache, arr) + arr[count][1])
     # DP 값 반환
     return cache[count][cur_v]
 
